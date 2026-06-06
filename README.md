@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/avatar.png" alt="Best Enterprise AI avatar" width="180">
+</p>
+
 # Best Enterprise AI
 
 **Best Enterprise AI** is a living field guide for building, operating, securing, and scaling Enterprise AI systems, with special focus on agentic AI, enterprise coding agents, AI-native SDLC, governed RAG, production inference, and agent operations.
