@@ -1,0 +1,23 @@
+{
+  "name": "create_jira_ticket",
+  "version": "1.0.0",
+  "owner": "platform-engineering",
+  "risk_tier": "medium",
+  "description": "Create a draft engineering ticket for human review.",
+  "input_schema": {
+    "type": "object",
+    "required": ["project", "title", "body"],
+    "properties": {
+      "project": { "type": "string", "maxLength": 20 },
+      "title": { "type": "string", "maxLength": 160 },
+      "body": { "type": "string", "maxLength": 4000 }
+    }
+  },
+  "approval": {
+    "required_when": ["external_customer_visible", "production_change"]
+  },
+  "audit": {
+    "log_arguments": true,
+    "redact_fields": []
+  }
+}
